@@ -5,7 +5,7 @@
  * 
  * DESCRIPTION:
  * a "HELLO WORLD" server-side application to demonstrate running a node 
- * API Appserver 
+ * API Appserver on a Raspberry Pi to access IOs
  * Uses the Express node packages. 
  * 
  * 
@@ -22,6 +22,7 @@ var express   = require('express');
 
 var app       = express();
 
+// dummy input port values for our example
 var inputs = [    { pin: '11', gpio: '17', value: 1 },
                   { pin: '12', gpio: '18', value: 0 }
                 ];
