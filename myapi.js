@@ -44,7 +44,7 @@ app.get('/inputs/:id', function (req, res) {
 app.get('/inputs', function (req, res) {
   // send an object as a JSON string
   console.log('all inputs');
-  res.send(inputs);
+  res.status(200).send(inputs);
 }); // apt.get()
 
 // Express route for any other unrecognised incoming requests
